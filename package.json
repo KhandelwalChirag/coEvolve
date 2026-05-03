@@ -15,6 +15,7 @@
   "types": "./dist/index.d.ts",
   "description": "Evolution layer for OpenCode - AI agent that learns your project",
   "scripts": {
+    "clean": "rm -rf dist node_modules .coevolve* *.tgz",
     "typecheck": "tsc --noEmit",
     "test": "bun test --timeout 30000",
     "build": "tsc",
