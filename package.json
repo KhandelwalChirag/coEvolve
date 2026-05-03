@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@opencode-ai/coevolve",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "description": "Evolution layer for OpenCode - AI agent that learns your project",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test --timeout 30000",
+    "build": "tsc",
+    "release": "bun run build && npm publish --access public"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./trace": "./dist/trace/index.js",
+    "./signal": "./dist/signal/index.js",
+    "./plugin": "./dist/plugin.js",
+    "./reflection": "./dist/reflection/index.js",
+    "./memory": "./dist/memory/index.js",
+    "./harness": "./dist/harness/index.js",
+    "./proposer": "./dist/proposer/index.js",
+    "./cli": "./dist/cli/index.js",
+    "./tui": "./dist/tui.js"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.14.33",
+    "@opencode-ai/sdk": "^1.14.33",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.25.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/bun": "^1.1.14",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}

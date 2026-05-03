@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "created_at": 1777781942670,
+  "updated_at": 1777781942670,
+  "tree_node": "root",
+  "parent_node": null,
+  "health_at_creation": 0.5,
+  "source": "bootstrap",
+  "confidence": "low",
+  "system_prompt_extensions": [
+    {
+      "id": "ext-bootstrap-1",
+      "content": "Project appears to use mixed stack. Respect existing patterns before proposing refactors.",
+      "reason": "bootstrap_scan",
+      "added_at": 1777781942670,
+      "added_by": "bootstrap",
+      "confidence": "low",
+      "locked": false
+    }
+  ],
+  "initial_context_files": [],
+  "tool_preferences": [],
+  "suppression_rules": [],
+  "aci_format_rules": [],
+  "invariant_rules": []
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.tgz
+.env
+.env.local
+.coevolve/
+.coevolve-*-test*
+.coevolve-test-*
+.coevolve-memory-test-*
+.coevolve-reflection-test
+.coevolve-harness-test-*
